@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+      <script type="text/javascript">
+       $(document).ready(function(){ 
+// console.log("Helloo world\n");
+    
+    $("#btn").click(function(){
+        $.ajax({
+    url: 'https://api.spotify.com/v1/tracks/1nJE8TEWK9hf9Bl0pekJCi',
+    headers: {
+      'Authorization': 'Bearer ' + 'BQCH-uu1I8eiIM-ZDD_XtgJ77yy2LAy6RgYJ7RSlXLFaL9pBRbaPx810FUpG8awImzDJO-eixhM248wo7jlZTylRRUmrgtamnkj02by2FQ4UbX6A9_c8W4pqXJSF9IDsjn0aA63FdNsd_zkycsmlnd9hUaOPX-uX-1jY'
+    },
+    success: function(response) {
+        console.log(response.id);
+      $(".resultsPlaceholder").innerHTML=response;
+    }
+  });
+});
+
+       });
+</script>
+
+<style>
+    #music_play{
+        margin-left : 580px;
+        margin-top: 175px;
+        /* padding: 10px; */
+    }
+</style>
+<body style="background-image: url(bg.png);size: 100%;background-repeat: no-repeat;background-size: cover;">
+
+ 
+ <div id="music_play">
+<iframe src="https://open.spotify.com/embed/playlist/22pRQCJnwTJDYUwMqXCg36" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+</body>
+</html>
