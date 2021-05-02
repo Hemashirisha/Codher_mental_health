@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Videos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url('4.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Pacifico', cursive;
+        }
+        .btn {
+            background-color: rgb(136, 189, 243); 
+            border: none;
+            color:black; 
+            padding: 12px 16px; 
+            font-size: 16px; 
+            cursor: pointer; 
+        }
+
+        .btn:hover {
+        background-color: rgb(99, 121, 187);
+        }
+        img {
+            border-radius: 60%;
+        }
+    </style>
+</head>
+
+<body> 
+<center> 
+    <h1>Its okay if you fall down and lose your spark.But make sure that, when you get back up you rise as the whole damn fire...</h1><br>
+    <div class="polaroid">
+        <img src="v2.jfif"  style="width:20%">
+        <div class="container">
+            <br>
+            <marquee behavior="scroll" direction="left" style="color: aliceblue;font-size: large;">
+                “Sometimes we rain on our own parade just by failing to rein in our emotions.”</marquee>
+            <button class="btn" id="postYourAdd" onclick="postYourAdd()"> We kick off the list with a compilation of surprisingly soothing clips.
+                 With music playing in the background keeping things mellow, it’s hard not to feel at least a little soothed.
+                Click here to watch a video...</button>
+        </div>
+    </div><br>
+    <iframe id="forPostyouradd" width="560" height="315" data-src="https://www.youtube.com/embed/lSbF9fq3dz8" src="about:blank" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <br><br>
+
+    <div class="polaroid">
+                <img src="v3.jfif"  style="width:20%">
+                <div class="container">
+                   <br> 
+                   <marquee behavior="scroll" direction="left" style="color: aliceblue;font-size: large;">
+                    “Relax and rejuvenate your sacred-spirit.”</marquee>
+                   <button class="btn" id="postYourAdd1" onclick="postYourAdd1()">It’s so soothing that it’s hard to pull your eyes away at times. And with good music to go behind it,
+                     relaxation is guaranteed. Click here to hear to watch a video...</button>
+                </div>
+    </div><br>
+    <iframe id="forPostyouradd1" width="560" height="315" data-src="https://www.youtube.com/embed/Wr6A78FDy_E" src="about:blank" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><br>
+
+    <div class="polaroid">
+        <img src="v4.jfif"  style="width:20%">
+        <div class="container">
+            <br>
+            <marquee behavior="scroll" direction="left" style="color: aliceblue;font-size: large;">
+                "Rest and be thankful.."</marquee>
+            <button class="btn" id="postYourAdd2" onclick="postYourAdd2()"> Breaking away from general clips and into specialties, who knew sand could be so hypnotic? 
+                The way the sand breaks apart in this video is so soothing to watch, and the sound is surprisingly tranquil.
+            Click here to watch a video... </button>
+        </div>
+    </div>
+    <br><iframe id="forPostyouradd2" width="560" height="315" data-src="https://www.youtube.com/embed/3clqk2U3T9Y" src="about:blank"  title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><br>
+
+    <div class="polaroid">
+        <img src="v5.jfif"  style="width:20%">
+        <div class="container">
+           <br> 
+           <marquee behavior="scroll" direction="left" style="color: aliceblue;font-size: large;">
+            “Take a deep breath. Inhale peace. Exhale happiness.”</marquee>
+           <button class="btn" id="postYourAdd3" onclick="postYourAdd3()"> When it comes to relaxing videos, nothing can beat nature. The 4k clips are beautiful. 
+            Plus with light piano music and nature sounds in the background, it’s hard not to feel Zen while watching.
+        Click here to watch a video...</button>
+        </div>
+    </div>
+    <br><iframe id="forPostyouradd3" width="560" height="315" data-src="https://www.youtube.com/embed/BHACKCNDMW8" src="about:blank" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+     
+    <script>
+        function postYourAdd () {
+            var iframe = $("#forPostyouradd");
+            iframe.attr("src", iframe.data("src")); 
+        }
+        function postYourAdd1 () {
+            var iframe = $("#forPostyouradd1");
+            iframe.attr("src", iframe.data("src")); 
+        }
+        function postYourAdd2 () {
+            var iframe = $("#forPostyouradd2");
+            iframe.attr("src", iframe.data("src")); 
+        }
+        function postYourAdd3 () {
+            var iframe = $("#forPostyouradd3");
+            iframe.attr("src", iframe.data("src")); 
+        }
+    </script>
+</center>
+</body>
+</html>

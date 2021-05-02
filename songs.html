@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Songs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url('5.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Pacifico', cursive;
+        }
+        .btn {
+            background-color: rgb(136, 189, 243); 
+            border: none;
+            color:black; 
+            padding: 12px 16px; 
+            font-size: 16px; 
+            cursor: pointer; 
+        }
+
+        .btn:hover {
+        background-color: rgb(99, 121, 187);
+        }
+        img {
+            border-radius: 60%;
+        }
+    </style>
+</head>
+
+<body> 
+<center> 
+    <h1>Don't let what wounded your heart, warp your spirit...</h1><br>
+    <div class="polaroid">
+        <img src="s4.jfif"  style="width:20%">
+        <div class="container">
+            <br>
+            <marquee behavior="scroll" direction="left" style="color: aliceblue;font-size: large;">
+                “Life isn’t as serious as the mind makes it out to be!"</marquee>
+            <button class="btn" id="postYourAdd" onclick="postYourAdd()"> Click here to hear to Deep focus</button>
+        </div>
+    </div>
+      <iframe id="forPostyouradd" data-src="https://open.spotify.com/embed/playlist/3Og5fRof1LGcjJ1MS5TZfl" src="about:blank" width="300" height="380" 
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br>
+    <div class="polaroid">
+                <img src="s6.jfif"  style="width:20%">
+                <div class="container">
+                   <br> 
+                   <marquee behavior="scroll" direction="left" style="color: aliceblue;font-size: large;">
+                    “Sometimes the most important thing in a whole day is the rest we take between two deep breaths."</marquee>
+                   <button class="btn" id="postYourAdd1" onclick="postYourAdd1()"> Click here to hear to Why pleasant!</button>
+                </div>
+    </div>
+    <iframe id="forPostyouradd1" data-src="https://open.spotify.com/embed/playlist/7k45bk17Kk06vxQYsyJJJq" src="about:blank" width="300" height="380" 
+    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br>
+    <div class="polaroid">
+        <img src="s5.jfif"  style="width:20%">
+        <div class="container">
+            <br>
+            <marquee behavior="scroll" direction="left" style="color: aliceblue;font-size: large;">
+                “You don’t always need a plan.  Sometimes you just need to breathe, trust, let go and see what happens.."</marquee>
+            <button class="btn" id="postYourAdd2" onclick="postYourAdd2()"> Click here to hear to Deep</button>
+        </div>
+    </div>
+    <iframe id="forPostyouradd2" data-src="https://open.spotify.com/embed/playlist/65ywaHEBYOG9e0DIOt3JSg" src="about:blank" width="300" height="380" 
+    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br>
+    <div class="polaroid">
+        <img src="s7.jfif"  style="width:20%">
+        <div class="container">
+           <br> 
+           <marquee behavior="scroll" direction="left" style="color: aliceblue;font-size: large;">
+            “Your calm mind is the ultimate weapon against your challenges.  So relax.”</marquee>
+           <button class="btn" id="postYourAdd3" onclick="postYourAdd3()"> Click here to hear to Companion</button>
+        </div>
+    </div>
+    <iframe id="forPostyouradd3" data-src="https://open.spotify.com/embed/playlist/6jawCrO72yrYnySa4uv15C" src="about:blank" width="300" height="380" 
+    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+     
+    <script>
+        function postYourAdd () {
+            var iframe = $("#forPostyouradd");
+            iframe.attr("src", iframe.data("src")); 
+        }
+        function postYourAdd1 () {
+            var iframe = $("#forPostyouradd1");
+            iframe.attr("src", iframe.data("src")); 
+        }
+        function postYourAdd2 () {
+            var iframe = $("#forPostyouradd2");
+            iframe.attr("src", iframe.data("src")); 
+        }
+        function postYourAdd3 () {
+            var iframe = $("#forPostyouradd3");
+            iframe.attr("src", iframe.data("src")); 
+        }
+    </script>
+</center>
+</body>
+</html>
