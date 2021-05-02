@@ -33,13 +33,24 @@
         img {
             border-radius: 60%;
         }
+        div.sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-image: url('listen_bg.png');
+            padding: 20px;
+            font-size: 20px;
+        }
     </style>
 </head>
 
 <body> 
 <center> 
-    <h1>Don't let what wounded your heart, warp your spirit...</h1><br>
-    <div class="polaroid">
+    <div class="sticky">
+        <h1>Don't let what wounded your heart, warp your spirit...</h1>
+        <br><button class="btn" onclick="home()"><i class="fa fa-home"></i>Home</button><br><br>
+    </div>
+        <div class="polaroid">
         <img src="s4.jfif"  style="width:20%">
         <div class="container">
             <br>
@@ -47,9 +58,9 @@
                 “Life isn’t as serious as the mind makes it out to be!"</marquee>
             <button class="btn" id="postYourAdd" onclick="postYourAdd()"> Click here to hear to Deep focus</button>
         </div>
-    </div>
+    </div><br>
       <iframe id="forPostyouradd" data-src="https://open.spotify.com/embed/playlist/3Og5fRof1LGcjJ1MS5TZfl" src="about:blank" width="300" height="380" 
-            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br>
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
     <div class="polaroid">
                 <img src="s6.jfif"  style="width:20%">
                 <div class="container">
@@ -58,9 +69,9 @@
                     “Sometimes the most important thing in a whole day is the rest we take between two deep breaths."</marquee>
                    <button class="btn" id="postYourAdd1" onclick="postYourAdd1()"> Click here to hear to Why pleasant!</button>
                 </div>
-    </div>
+    </div><br>
     <iframe id="forPostyouradd1" data-src="https://open.spotify.com/embed/playlist/7k45bk17Kk06vxQYsyJJJq" src="about:blank" width="300" height="380" 
-    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br>
+    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
     <div class="polaroid">
         <img src="s5.jfif"  style="width:20%">
         <div class="container">
@@ -69,9 +80,9 @@
                 “You don’t always need a plan.  Sometimes you just need to breathe, trust, let go and see what happens.."</marquee>
             <button class="btn" id="postYourAdd2" onclick="postYourAdd2()"> Click here to hear to Deep</button>
         </div>
-    </div>
+    </div><br>
     <iframe id="forPostyouradd2" data-src="https://open.spotify.com/embed/playlist/65ywaHEBYOG9e0DIOt3JSg" src="about:blank" width="300" height="380" 
-    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br>
+    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><br><br>
     <div class="polaroid">
         <img src="s7.jfif"  style="width:20%">
         <div class="container">
@@ -80,7 +91,7 @@
             “Your calm mind is the ultimate weapon against your challenges.  So relax.”</marquee>
            <button class="btn" id="postYourAdd3" onclick="postYourAdd3()"> Click here to hear to Companion</button>
         </div>
-    </div>
+    </div><br>
     <iframe id="forPostyouradd3" data-src="https://open.spotify.com/embed/playlist/6jawCrO72yrYnySa4uv15C" src="about:blank" width="300" height="380" 
     frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
      
@@ -100,6 +111,9 @@
         function postYourAdd3 () {
             var iframe = $("#forPostyouradd3");
             iframe.attr("src", iframe.data("src")); 
+        }
+        function home() {
+            location.replace("index.html")
         }
     </script>
 </center>
